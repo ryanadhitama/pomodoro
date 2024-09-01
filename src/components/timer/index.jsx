@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import Tabs from '../tabs'
 
 export default function PomodoroTimer() {
-  const [time, setTime] = useState(5)
+  const [time, setTime] = useState(25 * 60)
   const [isRunning, setIsRunning] = useState(false)
   const [mode, setMode] = useState('pomodoro')
   const audioRef = useRef(null)
